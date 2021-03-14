@@ -4,6 +4,8 @@ class User < ApplicationRecord
       "#{name}さん"
     elsif age > 10
       "#{name}君"
+    elsif age > 0
+      "#{name}ちゃん"
     else
       "不正な数値です"
     end
